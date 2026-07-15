@@ -18,3 +18,14 @@
 
 # Verify
 `bitcoind --version`
+
+# Start bitcoind
+`bitcoind -regtest -daemon`
+
+# Run any of the following commands
+
+`cargo run -- rpc getblockcount`
+
+`cargo run -- rpc getblockhash 200`
+
+`cargo run -- rpc getblock <hash>`
